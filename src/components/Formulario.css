@@ -1,0 +1,71 @@
+
+#conteinerFormulario{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px
+}
+form h1{
+
+    color: black;
+    font-size: 4rem;
+}
+#wrap{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#wrapFormulario, #wrapCep{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 6px;
+width: 100%
+}
+#wrap input, #wrapCep input{
+
+    height: 30px;
+    font-size: 21px;
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+}
+#botaoEnviar{
+
+    width: 20%;
+    height: 60px;
+    background-color: rgb(96, 240, 240);
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+}
+#botaoEnviar:hover{
+
+    border-color: black;
+}
+
+@media (max-width: 550px){
+    form h1{
+    font-size: 3rem;
+    }
+
+    #wrap input, #wrapCep input{
+        font-size: 16px;
+    
+    }
+    #botaoEnviar{
+        font-size: 16px;
+    }
+}

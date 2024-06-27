@@ -1,0 +1,54 @@
+#root {
+ 
+  margin: 0 auto;
+padding: 0;
+  text-align: center;
+}
+
+
+#container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main{
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main div{
+
+  width: 500px;
+}
+#main h1{
+  color: yellow;
+}
+
+#main p{
+
+  color: azure;
+  font-size: 1.5rem;
+
+}
+
+@media(max-width: 1089px){
+
+  #main {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    #main div{
+
+      width: 300px;
+    }
+  }
